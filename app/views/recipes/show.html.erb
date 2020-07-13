@@ -1,1 +1,9 @@
 <h1>Recipe: <%= @recipe.name %></h1>
+
+<h3>Prep Time:<%= @recipe.prep_time %></h3>
+<h3>Cook Time:<%= @recipe.cook_time %></h3>
+
+<p>Description: <%= @recipe.description %></p>
+<p>Instruction: <%= @recipe.instructions %></p>
+
+<%= link_to "All Recipes", recipes_path %>
