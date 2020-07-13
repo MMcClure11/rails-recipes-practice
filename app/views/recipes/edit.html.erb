@@ -1,18 +1,6 @@
 <h1>Edit <%= @recipe.name %></h1>
 
-<%= form_for @recipe do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
-  <%= f.label :description %>
-  <%= f.text_area :description %><br>
-  <%= f.label :instructions %>
-  <%= f.text_area :instructions %><br>
-  <%= f.label :prep_time %>
-  <%= f.text_field :prep_time %><br>
-  <%= f.label :cook_time %>
-  <%= f.text_field :cook_time %><br>
-  <%= f.submit %>
-<% end %>
+<%= render 'form' %>
 
 <%= link_to "All Recipes", recipes_path %><br>
 <%= link_to "Back to Recipe", recipe_path(@recipe) %>
