@@ -7,4 +7,6 @@
 <p>Instruction: <%= @recipe.instructions %></p>
 
 <%= link_to "Edit this Recipe", edit_recipe_path(@recipe) %><br>
+<%= button_to "Delete this Recipe", recipe_path(@recipe), method: :delete, data: {confirm: "Are you sure?"} %>
+
 <%= link_to "All Recipes", recipes_path %>

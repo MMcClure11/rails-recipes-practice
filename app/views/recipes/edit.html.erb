@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
+<%= button_to "Delete this Recipe", recipe_path(@recipe), method: :delete, data: {confirm: "Are you sure?"} %>
 <%= link_to "All Recipes", recipes_path %><br>
 <%= link_to "Back to Recipe", recipe_path(@recipe) %>
