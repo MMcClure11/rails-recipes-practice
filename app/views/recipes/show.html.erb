@@ -6,4 +6,5 @@
 <p>Description: <%= @recipe.description %></p>
 <p>Instruction: <%= @recipe.instructions %></p>
 
+<%= link_to "Edit this Recipe", edit_recipe_path(@recipe) %><br>
 <%= link_to "All Recipes", recipes_path %>
