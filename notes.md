@@ -27,3 +27,14 @@ What are the benefits?
 -cleaner and more readable
 -no more interpolation
 -route helpers translate directly into HTML-friendly paths. In other words, if you have any weird characters in your URLs, the route helpers will convert them so they can be read properly by browsers
+
+# Rails Validations
+
+- data before it goes into the database, any time we are dealing with our database we are using ActiveRecord
+- set up in our models
+
+When are these validations run?
+- valid?/invalid? (not actually sending data to database, just checking if conditions valid)
+- create (call save for us)
+- update (call save for us)
+- save
