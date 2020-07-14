@@ -39,3 +39,4 @@ When are these validations run?
 - update (call save for us)
 - save
 - create! and save! will through an error and make an error page, would then have to begin and rescue validation error
+- example of customising a message:   validates :name, presence: { message: "Hello!" }
