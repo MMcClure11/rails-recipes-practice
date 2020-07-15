@@ -53,4 +53,8 @@ when setting up db, recipe:belongs to vs recipe_id:integer
   schema will set up recipe_id column regardless
       t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
       using belongs_to makes querying faster because of how the table is organised
+  needs associations macros has_many and belongs_to in models, this gives us methods; this association works because of the recipe_id column in the ingredients table
+    the thing that belongs_to gets a method #recipe_build
 - has_many, through: (used for setting up a many to many relationship)
+
+- * In rails, if something belongs_to something else, it will NOT save to the database, unless it has the foreign_key filled in, because Rails treats belongs_to sort of like a validation
