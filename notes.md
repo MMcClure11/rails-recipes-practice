@@ -40,3 +40,17 @@ When are these validations run?
 - save
 - create! and save! will through an error and make an error page, would then have to begin and rescue validation error
 - example of customising a message:   validates :name, presence: { message: "Hello!" }
+
+# Rails Associations and Nested Forms
+
+Recipe - Ingredient 
+
+ingredient belongs_to :recipe
+recipe has_many :ingredients
+
+Where do we see the association between objects?
+when setting up db, recipe:belongs to vs recipe_id:integer
+  schema will set up recipe_id column regardless
+      t.index ["recipe_id"], name: "index_ingredients_on_recipe_id"
+      using belongs_to makes querying faster because of how the table is organised
+- has_many, through: (used for setting up a many to many relationship)
