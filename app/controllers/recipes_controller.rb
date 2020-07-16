@@ -25,6 +25,9 @@ class RecipesController < ApplicationController
   end
 
   def edit
+    10.times do
+      @recipe.ingredients.build
+    end
   end
 
   def update
