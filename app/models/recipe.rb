@@ -10,8 +10,8 @@ class Recipe < ApplicationRecord
   #   end
   # end
 
-  validates :name, presence: true
-  validates :description, presence: true
+  # validates :name, presence: true
+  # validates :description, presence: true
   
   # include ActiveModel::Validations
   # validates_with RecipeValidator
