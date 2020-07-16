@@ -53,7 +53,7 @@ class RecipesController < ApplicationController
       :instructions, 
       :cook_time, 
       :prep_time,
-      ingredients_attributes: [:name]  
+      ingredients_attributes: [:name, :id]  
     )
   end
 end
